@@ -1,4 +1,5 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    let mySprite2 = 0
     projectile = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -17,6 +18,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, 90, 0)
+    if (mySprite2 || false) {
+    	
+    }
+})
+sprites.onCreated(SpriteKind.Player, function (sprite) {
+	
 })
 let myEnemy: Sprite = null
 let projectile: Sprite = null
